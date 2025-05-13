@@ -18,7 +18,12 @@ h3 {
 
 /* Header */
 header {
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 550px;
+  margin: auto;
+  padding: 20px;
 }
 
 /* Containers */
@@ -75,4 +80,73 @@ footer {
 /* Other page elements */
 hr {
   border: 1px solid black;
+}
+
+
+/* Flex layout for about intro */
+.about-flex {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 600px;
+  margin-left: 40px;
+  flex-wrap: wrap;
+}
+
+/* Image */
+.about-image {
+  flex: 1;
+  text-align: center;
+}
+
+/* Text */
+.about-text {
+  flex: 2;
+  text-align: left;
+   margin-left: 0;           /* removes extra push to the right */
+  padding-left: 10px;       /* just a soft indent if needed */
+  max-width: 350px;  
+}
+
+
+/* Heading centered inside text block */
+.about-heading {
+  text-align: center;
+  margin-left: -50px;
+}
+
+/* Optional: Remove width limit from ul if needed */
+.about-text ul {
+  margin-left: 0px;
+}
+
+
+
+
+/* === Portfolio Section Layout === */
+.portfolio-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.project {
+  flex: 1;
+  text-align: center;
+}
+
+.project img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.project p {
+  font-size: 14px;
+  line-height: 1.4;
+  padding: 0 10px;
 }
